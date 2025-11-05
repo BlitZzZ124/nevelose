@@ -1,19 +1,85 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Elo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>nevelose.com</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="All my links." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="nevelose.com" />
+    <meta property="og:description" content="elo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="snowflake.svg" />
+
+    <link rel="icon" type="image/x-icon" href="./files/fajny_el_gato.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <p>Elo moj mail szefuncio@nevelose.xyz nie umiem robic strony ok ok o k ok <strong>z nevelose.xyz na nevelose.com dalem taka og stronke kurde malo kto zna</strong> elo.</p>
-  </body>
-</html>
+    <!-- Snow canvas background -->
+    <canvas id="snow-canvas" aria-hidden="true"></canvas>
 
-                    <!-- The Old Net Embed Code -->
-                    <p>
-                    <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!">
-                    <img src="//theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31" border=0>
-                    </a>
-                    </p>
-                    <!-- End The Old Net Embed Code -->
-                
+    <main class="page">
+      <header class="profile">
+        <img class="avatar" src="https://i.imgur.com/kTMwiZ6.jpeg" alt="Profile avatar" />
+        <h1 class="title">Blitz (nevelose)</h1>
+        <p class="tagline"></p>
+      </header>
+
+      <section class="links" aria-label="Primary links">
+        <!-- Edit your links below -->
+        <a class="link-card" href="https://steamcommunity.com/profiles/76561199030122235" target="_blank" rel="noopener noreferrer">
+          <div class="link-content">
+            <img class="link-icon" src="./files/steam-symbol-brands-solid-full.svg" alt="Steam icon" width="24" height="24" />
+            <span class="label">Steam</span>
+          </div>
+        </a>
+        <a class="link-card" href="https://www.tiktok.com/@0d6p" target="_blank" rel="noopener noreferrer">
+          <div class="link-content">
+            <svg class="link-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="currentColor"/></svg>
+            <span class="label">TikTok</span>
+          </div>
+        </a>
+        <a class="link-card" href="https://www.xbox.com/en-us/play/user/BlitZz1244" target="_blank" rel="noopener noreferrer">
+          <div class="link-content">
+            <img class="link-icon" src="./files/xbox-brands-solid-full.svg" alt="Xbox icon" width="24" height="24" />
+            <span class="label">Xbox</span>
+          </div>
+        </a>
+        <a class="link-card" href="mailto:hello@nevelose.com" target="_blank" rel="noopener noreferrer">
+          <div class="link-content">
+            <svg class="link-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
+            <span class="label">Email</span>
+          </div>
+        </a>
+      </section>
+
+      <section class="social" aria-label="Social media">
+        <a class="social-btn" href="https://www.instagram.com/lvvuuv/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.4.5.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.4-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.4-.5-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.4-1.2-.5-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.4.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1 .1-1.5.2-1.9.4-.5.2-.8.4-1.1.8-.3.3-.6.6-.8 1.1-.2.4-.3.9-.4 1.9-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.5.4 1.9.2.5.4.8.8 1.1.3.3.6.6 1.1.8.4.2.9.3 1.9.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.5-.2 1.9-.4.5-.2.8-.4 1.1-.8.3-.3.6-.6.8-1.1.2-.4.3-.9.4-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.5-.4-1.9-.2-.5-.4-.8-.8-1.1-.3-.3-.6-.6-1.1-.8-.4-.2-.9-.3-1.9-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.2a6.8 6.8 0 1 1 0 13.6 6.8 6.8 0 0 1 0-13.6zm0 1.8a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm5-2.4a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2z" fill="currentColor"/></svg>
+        </a>
+        <a class="social-btn" href="https://t.me/guwniarz" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9.1 15.3 8.8 19c.5 0 .7-.2 1-.4l2.3-2.2 4.8 3.5c.9.5 1.5.3 1.8-.8l3.4-16.1c.3-1.2-.4-1.7-1.2-1.4L1.7 9.8c-1.1.4-1.1 1.1-.2 1.4l6 1.9L19.6 6c.6-.4 1.2-.2.7.2L9.1 15.3z" fill="currentColor"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.youtube.com/@lvvuuv" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M23.5 6.2c-.3-1.3-1.3-2.3-2.6-2.6C19.1 3.2 12 3.2 12 3.2s-7.1 0-8.9.4C1.8 3.9.8 4.9.5 6.2.1 7.9.1 12 .1 12s0 4.1.4 5.8c.3 1.3 1.3 2.3 2.6 2.6 1.8.4 8.9.4 8.9.4s7.1 0 8.9-.4c1.3-.3 2.3-1.3 2.6-2.6.4-1.7.4-5.8.4-5.8s0-4.1-.4-5.8zM9.9 15.5v-7l6 3.5-6 3.5z" fill="currentColor"/></svg>
+        </a>
+      </section>
+
+      <footer class="footer">
+        <button id="toggle-snow" class="toggle">Snow: On</button>
+        <span class="credits">nevelose.com</span>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
 
